@@ -1,9 +1,349 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title></title>
-    </head>
-    <body>
-        Hello Bois!
-    </body>
+
+<head>
+    <title> Card </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <style>
+
+        .red {
+            background-color: red;
+        }
+
+        .green {
+            background-color: green;
+        }
+
+        .no-margin {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        .row-space {
+            margin: 4% 0;
+        }
+
+        .card-deck .card {
+            border: none;
+            background-color: dimgray;
+            color: white;
+        }
+
+        .jumbo-header {
+            position: absolute;
+            z-index: -1;
+            background-image: url("../img/cr5.jpg");
+            background-size: cover;
+            background-position-y: 85%;
+            background-repeat: no-repeat;
+            height: 96vh;
+            width: 100%;
+        }
+
+        .row-header {
+            background-color: #ffffff;
+            max-width: 1280px;
+            z-index: 1;
+        }
+
+        .invisible-div {
+            height: 96vh;
+        }
+
+        footer {
+            background-color: #282828;
+        }
+
+        .for-footer{
+            color: #cecece;
+        }
+
+        .for-footer .nav a{
+            font-size: 12pt;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        .for-footer .nav a:hover{
+            color: white;
+        }
+
+        .nav a {
+            font-size: 14pt;
+            color: #707070;
+        } 
+
+        .nav a:hover{
+            color: #282828;
+        }
+
+        .navbar-brand {
+            color: #707070;
+            font-size: 22pt;
+        }
+
+        .navbar-brand:hover {
+            color: #282828;
+            font-size: 22pt;
+        }
+        
+        .quantity-num{
+            color: #eab245;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="jumbotron jumbotron-fluid jumbo-header">
+    </div>
+    <div class="container-fluid no-margin">
+        <div class="row row-header">
+            <div class="col-md-4">
+                <nav class="navbar">
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Shop</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Pages</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Elements</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="col-md-4">
+                <nav class="navbar justify-content-center">
+                    <a class="navbar-brand" href="#">Savoy</a>
+                </nav>
+            </div>
+            <div class="col-md-4">
+                <nav class="navbar justify-content-end">
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Sign In</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Cart
+                                <sup class="quantity-num"> 0</sup>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <div class="invisible-div"></div>
+    <div class="container-fluid">
+        <div class="row row-space">
+            <div class="col-md-12">
+                <!-- First Row -->
+                <div class="card-deck">
+                    <div class="card" style="width: 4rem; border: none">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 4rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row row-space">
+            <!-- second Row -->
+            <div class="col-md-12">
+                <div class="card-deck">
+                    <div class="card" style="width: 4rem; border: none">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 4rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row row-space">
+            <!-- third Row -->
+            <div class="col-md-12">
+                <div class="card-deck">
+                    <div class="card" style="width: 4rem; border: none">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 4rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row row-space">
+            <!-- fourth Row -->
+            <div class="col-md-12">
+                <div class="card-deck">
+                    <div class="card" style="width: 4rem; border: none">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 4rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row row-space">
+            <!-- Fifth Row -->
+            <div class="col-md-12">
+                <div class="card-deck">
+                    <div class="card" style="width: 4rem; border: none">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 4rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <nav class="navbar for-footer">
+            <ul class="nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">FAQs</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Order Tracking</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </footer>
+
+</body>
+
 </html>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
