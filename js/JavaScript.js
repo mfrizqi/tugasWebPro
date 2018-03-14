@@ -3,7 +3,7 @@ $(document).ready(function(){
 	$("#").click(function(){
 		var nama = document.getElementById().value;
 		var pass = document.getElementById().value;
-		$.getJSON("no3.json",function(jd){
+		$.getJSON("Data.json",function(jd){
 			var temp = false;
 			var i = jd.Admin.length;
 			var j = 0;
