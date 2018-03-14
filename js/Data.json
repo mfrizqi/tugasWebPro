@@ -1,0 +1,9 @@
+{
+	"Admin" : [{
+			"Nama" 	: 	"Admin",
+			"Pass"	:	"Admin123"	
+		}],
+	"User"	:[{
+		
+		}]
+}
