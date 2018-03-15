@@ -1,7 +1,7 @@
 {
 	"Admin" : [{
-			"Nama" 	: 	"Admin",
-			"Pass"	:	"Admin123"	
+			"email" 	: 	"Admin@gmail.com",
+			"Pass"		:	"Admin123"	
 		}],
 	"User"	:[{
 		

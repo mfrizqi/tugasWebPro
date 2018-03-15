@@ -1,14 +1,15 @@
 
 $(document).ready(function(){
-	$("#").click(function(){
-		var nama = document.getElementById().value;
-		var pass = document.getElementById().value;
-		$.getJSON("Data.json",function(jd){
+	$("#signin").click(function(){
+		var nama = document.getElementById("Email").value;
+		var pass = document.getElementById("pass").value;
+		// alert("hahah");
+		$.getJSON("../js/Data.json",function(jd){
 			var temp = false;
 			var i = jd.Admin.length;
 			var j = 0;
 			while((temp != true) && (j <= i-1 )){
-				if ((nama == jd.Admin[j].Nama) && (pass == jd.Admin[j].Pass)) {
+				if ((nama == jd.Admin[j].email) && (pass == jd.Admin[j].Pass)) {
 					temp = true;
 				}
 				j++;
