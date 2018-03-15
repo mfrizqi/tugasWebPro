@@ -24,51 +24,41 @@
             color: white;
         }
 
-        .jumbo-header {
-            position: absolute;
-            z-index: -1;
+        .jumbo-header{
             background-image: url("../img/cr5.jpg");
             background-size: cover;
-            background-position-y: 85%;
-            background-repeat: no-repeat;
-            height: 96vh;
+            background-position-y:80%; 
+            height: 100vh;
             width: 100%;
-        }
-
-        .row-header {
-            background-color: #ffffff;
-            max-width: 1280px;
+            position: absolute;
             z-index: 1;
         }
 
-        .invisible-div {
-            height: 96vh;
+        .row-header{
+            color: #282828;
+            height: 5em;
+            width: 100%;
+            z-index: 2;
+            position: fixed;
+            background-color: #ffffff;
         }
 
-        footer {
-            background-color: #282828;
+        .navbar-brand {
+            position: absolute;
+            width: 100%;
+            left: 0;
+            top: 0;
+            text-align: center;
+            vertical-align: middle;
+            font-size: 2em;
         }
-
-        .for-footer{
-            color: #cecece;
-        }
-
-        .for-footer .nav a{
-            font-size: 12pt;
-            margin-top: 10px;
-            margin-bottom: 10px;
-        }
-
-        .for-footer .nav a:hover{
-            color: white;
-        }
-
+        
         .nav a {
-            font-size: 12pt;
+            font-size: 14pt;
             color: #707070;
-        } 
+        }
 
-        .nav a:hover{
+        .nav a:hover {
             color: #282828;
         }
 
@@ -81,8 +71,35 @@
             color: #282828;
             font-size: 22pt;
         }
-        
-        .quantity-num{
+
+        .middlein{
+            position: relative;
+            top: 0.5em;
+        }
+
+        .invisible-div {
+            height: 96vh;
+        }
+
+        footer {
+            background-color: #282828;
+        }
+
+        .for-footer {
+            color: #cecece;
+        }
+
+        .for-footer .nav a {
+            font-size: 12pt;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        .for-footer .nav a:hover {
+            color: white;
+        }
+
+        .quantity-num {
             color: #eab245;
         }
 
@@ -90,46 +107,38 @@
 </head>
 
 <body>
-    <div class="jumbotron jumbotron-fluid jumbo-header">
-    </div>
-    <div class="container-fluid no-margin">
-        <div class="row row-header">
-            <div class="col-md-4">
-                <nav class="navbar">
-                    <ul class="nav">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Shop</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Pages</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Elements</a>
-                        </li>
-                    </ul>
-                </nav>
+        <div class="container-fluid no-space">
+                <div class="row row-header no-space">
+                    <div class="col-md-12">
+                        <nav class="navbar navbar-default middlein">
+                            <a class="navbar-brand">Savoy</a>
+                            <ul class="nav navbar-left">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#" >Shop</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Catalog</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Contact</a>
+                                </li>
+                            </ul>
+                            <ul class="nav navbar-right">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Sign Up</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Cart
+                                        <sup> 0</sup>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
             </div>
-            <div class="col-md-4">
-                <nav class="navbar justify-content-center">
-                    <a class="navbar-brand" href="#">Savoy</a>
-                </nav>
+            <div class="jumbotron jumbotron-fluid no-space jumbo-header">
             </div>
-            <div class="col-md-4">
-                <nav class="navbar justify-content-end">
-                    <ul class="nav">
-                        <li class="nav-item">
-                            <a class="nav-link" href="loginpage.html">Sign In</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Cart
-                                <sup class="quantity-num"> 0</sup>
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
-    </div>
     <div class="invisible-div"></div>
     <div class="container-fluid">
         <div class="row row-space">
