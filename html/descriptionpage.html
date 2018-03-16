@@ -6,204 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
-    <style>
-        /*Header and Footer css*/
-
-        .no-space {
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-        }
-
-        .card-deck .card {
-            border: none;
-            background-color: dimgray;
-            color: white;
-        }
-
-        .row-header {
-            color: #282828;
-            height: 5em;
-            width: 100%;
-            z-index: 2;
-            position: fixed;
-            background-color: #ffffff;
-        }
-
-        .navbar-brand {
-            position: absolute;
-            width: 100%;
-            left: 0;
-            top: 0;
-            text-align: center;
-            vertical-align: middle;
-            font-size: 2em;
-        }
-
-        .nav a {
-            font-size: 14pt;
-            color: #707070;
-        }
-
-        .nav a:hover {
-            color: #282828;
-        }
-
-        .navbar-brand {
-            color: #707070;
-            font-size: 22pt;
-        }
-
-        .navbar-brand:hover {
-            color: #282828;
-            font-size: 22pt;
-        }
-
-        .navbar-right,
-        .navbar-left {
-            z-index: 3;
-        }
-
-        .middlein {
-            position: relative;
-            top: 0.5em;
-        }
-
-        .invisible-div {
-            height: 96vh;
-        }
-
-        footer {
-            background-color: #282828;
-        }
-
-        .for-footer {
-            color: #cecece;
-        }
-
-        .for-footer .nav a {
-            font-size: 12pt;
-            margin-top: 10px;
-            margin-bottom: 10px;
-        }
-
-        .for-footer .nav a:hover {
-            color: white;
-        }
-
-        #quantityNum {
-            color: #eab245;
-        }
-
-        /* descriptionpage css*/
-
-        .product-information {
-            margin-top: 5em;
-            background-color: hotpink;
-        }
-
-        .row-product-showcase {
-            height: 120vh;
-            background-color: #eeeeee;
-        }
-
-        #product-image {
-            height: 95%;
-            width: auto;
-            margin-left: 5em;
-        }
-
-        .row-product-cap {
-            margin-top: 8em;
-        }
-
-        .row-product-quantity {
-            margin-top: 4em;
-            width: 80%;
-            height: auto;
-        }
-
-        .product-quantity {
-            width: 100%;
-            height: auto;
-        }
-
-        #btnAddToCart {
-            background-color: #282828;
-            color: #ffffff;
-            width: 100%;
-            border-radius: 0;
-            padding: 12px;
-            margin-top: 8%;
-        }
-
-        #btnAddToCart:hover {
-            background-color: #eab245;
-        }
-
-        #btnAddingProduct {
-            background-color: #eeeeee;
-            font-size: 2em;
-        }
-
-        #btnSubtractProduct {
-            background-color: #eeeeee;
-            font-size: 2em;
-        }
-
-        #quantityProduct {
-            font-size: 2em;
-            margin-top: 15%;
-            color: #eab245;
-        }
-
-        #productPrice {
-            padding: 0 0 1em 0;
-            color: #eab245;
-        }
-
-        #productCaption {
-            width: 80%;
-        }
-
-        .product-description {
-            height: auto;
-            background-color: #ffffff;
-            width: 100%;
-        }
-
-        .row-product-description {
-            width: 100%;
-            margin-top: 2%;
-            margin-bottom: 3%;
-            height: auto;
-        }
-
-        #descriptionText {
-            font-size: 1.3em;
-            color: #8f8f8f;
-        }
-
-        .product-identity {
-            height: 10vh;
-            border-top: 2px solid #e7e7e7;
-            border-bottom: 2px solid #e7e7e7;
-            box-sizing: content-box;
-        }
-
-        .product-identity p {
-            margin-top: 2%;
-            font-size: 1.3em;
-        }
-
-        .row-title-recommend {
-            margin: 4% 1% 0 1%;
-        }
-
-        .row-item-recommend {
-            margin: 2% 1% 8% 1%;
-        }
-    </style>
+    <link rel="stylesheet" href="../css/construct.css">
+    <link rel="stylesheet" href="../css/description.css">
 </head>
 
 <body>
@@ -211,7 +15,7 @@
         <div class="row row-header no-space">
             <div class="col-md-12">
                 <nav class="navbar navbar-default middlein">
-                    <a class="navbar-brand">Savoy</a>
+                    <a class="navbar-brand" href="#">Savoy</a>
                     <ul class="nav navbar-left">
                         <li class="nav-item">
                             <a class="nav-link" href="#">Shop</a>
@@ -239,11 +43,11 @@
     </div>
     <!-- content here -->
 
-    <div class="product-information">
+    <div class="product-information" id="product">
         <div class="container-fluid">
             <div class="row row-product-showcase">
                 <div class="col-md-6">
-                    <img src="../img/doorbumper.jpg" id="product-image">
+                    <img src="../img/product/doorbumper.jpg" class="product-image">
                 </div>
                 <div class="col-md-6">
                     <div class="containter-fluid">
@@ -323,32 +127,40 @@
                 <div class="col-md-12">
                     <!-- First Row -->
                     <div class="card-deck">
-                        <div class="card" style="width: 4rem; border: none">
+                        <div class="card" id="product">
+                            <img class="card-img-top" src="">
                             <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                <h4 id="card-title">Product Name</h4>
+                                <p class="card-text">$
+                                    <span id="product-price">Product Price</span>
+                                </p>
                             </div>
                         </div>
-                        <div class="card" style="width: 4rem;">
+                        <div class="card" id="product">
+                            <img class="card-img-top" src="">
                             <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                <h4 id="card-title">Product Name</h4>
+                                <p class="card-text">$
+                                    <span id="product-price">Product Price</span>
+                                </p>
                             </div>
                         </div>
-                        <div class="card">
+                        <div class="card" id="product">
+                            <img class="card-img-top" src="">
                             <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                <h4 id="card-title">Product Name</h4>
+                                <p class="card-text">$
+                                    <span id="product-price">Product Price</span>
+                                </p>
                             </div>
                         </div>
-                        <div class="card">
+                        <div class="card" id="product">
+                            <img class="card-img-top" src="">
                             <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                <h4 id="card-title">Product Name</h4>
+                                <p class="card-text">$
+                                    <span id="product-price">Product Price</span>
+                                </p>
                             </div>
                         </div>
                     </div>
