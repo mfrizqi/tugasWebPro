@@ -1,0 +1,40 @@
+.container{
+	font-family: sans-serif;
+}
+
+.item-dummy{
+	max-width: 20%;
+	vertical-align: middle;
+	margin-right: 10px;
+}
+
+.price{
+	display: inline;
+	padding: 110px;
+}
+
+.table{
+	margin-top: 15px;
+	border: 1px 1px 1px 1px solid;
+}
+
+.btn-dark{
+	width: 100%;
+}
+
+#helpLine{
+	font-size: 10px;
+	margin-left: 5px;
+}
+
+.zip-cont{
+	margin-top: 10px;
+}
+
+.phone-cont{
+	margin-top: 10px;
+}
+
+.address-cont{
+	margin-top: 10px;
+}
