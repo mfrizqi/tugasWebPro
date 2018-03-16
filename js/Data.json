@@ -5,5 +5,11 @@
 		}],
 	"User"	:[{
 		
-		}]
+		}],
+	"gambar" : [
+	{
+		"no"	: 1,
+		"url"	: "../img/doorbumper.jpg"
+	}
+	]
 }

@@ -29,9 +29,9 @@ $(document).ready(function(){
 });
 function validasi(temp){
 	if (temp == true) {
-		window.location.href = "";
+		window.location.href = "landingpage.html";
 	}
 	else{
-		alert("Username Or Password not match!");
+		alert("Email Or Password not match!");
 	}
 }
