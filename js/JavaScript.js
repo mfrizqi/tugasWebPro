@@ -6,7 +6,8 @@ $(document).ready(function(){
 	var h = [];
 	var k = 0;
 	var ceek = false;
-	var temp2 = 1;
+    var temp2 = 1;
+    var sumproduk = 0;
     $.getJSON("../js/Data.json", function (jd) {
         while (temp2 <= 20) {
             ceek = false;
