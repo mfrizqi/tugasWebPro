@@ -1,47 +1,42 @@
 
 $(document).ready(function(){
 	var i = 0;
-	var temp3 = 0;
 	var j = 0;
-	var h = [];
-	var k = 0;
+	var penampung = [];
+	var idxpenampung = 0;
 	var ceek = false;
-    var temp2 = 1;
+    var card = 1;
     var sumproduk = 0;
     $.getJSON("../js/Data.json", function (jd) {
-        while (temp2 <= 20) {
+        while (card <= 20) {
             ceek = false;
-            k = 0;
-            j = h.length;
+            idxpenampung = 0;
+            j = penampung.length;
             i = Math.floor(Math.random() * 20);
             // alert(i);
-            while ((ceek == false) && (k <= j - 1)) {
-                if (h[k] == i) {
+            while ((ceek == false) && (idxpenampung <= j - 1)) {
+                if (penampung[idxpenampung] == i) {
                     ceek = true
                 }
-                k++;
+                idxpenampung++;
             }
             if (ceek != true) {
                 if (jd.gambar[i].nama == "Door Bumper") {
-                    $("#product" + temp2 + " a").attr("href", "descriptionpage.html");
+                    $("#product" + card + " a").attr("href", "descriptionpage.html");
                 }
-                $("#product" + temp2 + " img").attr("src", jd.gambar[i].url);
-                $("#product" + temp2 + " div h4").append(jd.gambar[i].nama);
-                $("#product" + temp2 + " div a p").append(jd.gambar[i].price);
-                // temp2++;
-                // temp3++;
-                // h.push(i);
+                $("#product" + card + " img").attr("src", jd.gambar[i].url);
+                $("#product" + card + " div h4").append(jd.gambar[i].nama);
+                $("#product" + card + " div a p").append(jd.gambar[i].price);
             }
             if (ceek != true) {
                 if (jd.gambar[i].nama == "Door Bumper") {
-                    $("#productt" + temp2 + " a").attr("href", "descriptionpage.html");
+                    $("#productt" + card + " a").attr("href", "descriptionpage.html");
                 }
-                $("#productt" + temp2 + " img").attr("src", jd.gambar[i].url);
-                $("#productt" + temp2 + " div h4").append(jd.gambar[i].nama);
-                $("#productt" + temp2 + " div a p").append(jd.gambar[i].price);
-                temp2++;
-                temp3++;
-                h.push(i);
+                $("#productt" + card + " img").attr("src", jd.gambar[i].url);
+                $("#productt" + card + " div h4").append(jd.gambar[i].nama);
+                $("#productt" + card + " div a p").append(jd.gambar[i].price);
+                card++;
+                penampung.push(i);
             }
         }
 
