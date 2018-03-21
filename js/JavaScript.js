@@ -8,6 +8,20 @@ $(document).ready(function(){
     var card = 1;
     var sumproduk = 0;
     $.getJSON("../js/Data.json", function (jd) {
+        // localStorage.removeItem("nama");
+        var nama = localStorage.getItem("nama");
+        // alert(nama);
+        if (nama != null) {
+            $("#In").append("My Profile");
+            $("#In").attr("href","profilpage.html");
+            $("#ul2").append("<li class='nav-item'><a class='nav-link' href='landingpage.html' id='logout'>Log Out</a></li>");
+            
+        }
+        else{
+           $("#In").append("Sign In"); 
+           
+        }
+
         while (card <= 20) {
             ceek = false;
             idxpenampung = 0;
@@ -56,7 +70,11 @@ $(document).ready(function(){
 	// 	$("#productt"+temp2+" div a p").append(jd.gambar[temp3].price);
 	// 	temp3++;
 	// }
-		
+		//fungsi Logout
+        $("#logout").click(function(){
+            localStorage.removeItem("nama");
+        });
+
         // Fungsi pindah ke page billing
         $("#btnAddToCart").click(function () {
             window.location.href = "billingpage.html";
@@ -106,6 +124,7 @@ $(document).ready(function(){
 // fungsi validasi akun saat login
 function validasi(temp) {
     if (temp == true) {
+        localStorage.setItem("nama","Admin");
         window.location.href = "landingpage.html";
     }
     else {
