@@ -7,3 +7,20 @@
 	text-decoration: none;
 	margin-bottom: 30%;
 }
+
+figcaption{
+	color: #282828;
+}
+
+figcaption:hover{
+	color: #eab245;
+	text-decoration: underline;
+}
+
+.link-on{
+	text-decoration: none;
+}
+
+.link-on:hover{
+	text-decoration: none;
+}
