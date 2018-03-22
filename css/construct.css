@@ -27,6 +27,16 @@
     padding: 0;
 }
 
+.card-price{
+    text-decoration: none;
+    color: #282828;
+}
+
+.card-price:hover{
+    text-decoration: underline;
+    color: #eab245;
+}
+
 .jumbo-header {
     background-image: url("../img/header.jpg");
     background-size: cover;
@@ -69,8 +79,12 @@
     text-align: center;
     vertical-align: middle;
     font-size: 2em;
+    color: #707070;
 }
 
+.navbar-brand:hover{
+    color: #282828;
+}
 
 .navbar-right,
 .navbar-left {
@@ -83,16 +97,6 @@
 
 .nav a:hover {
     color: #282828;
-}
-
-.navbar-brand {
-    color: #707070;
-    font-size: 22pt;
-}
-
-.navbar-brand:hover {
-    color: #282828;
-    font-size: 22pt;
 }
 
 .middlein {

@@ -3,30 +3,15 @@ body {
 	font-family: Arial;
 }
 
-.top-header {
-	overflow: hidden;
-	background-color: white;
-	padding: 8px 8px;
-}
-
-.top-header a {
-	float: right;
-	color: black;
-	padding: 6px;
-	font-size: 18px; 
-	text-decoration: none;
-	position: -webkit-sticky;
-
-}
-
-.navbar {
-	float: left;
-	text-decoration: none;
+.form-contain{
+	position: relative;
+	top: 5em;
 }
 
 .sign-in{
 	text-align: center;
 	margin-top: 10%;
+	color: #282828;
 }
 
 .email-cont{
@@ -39,10 +24,22 @@ div.inline {
 
 .btn-in{
 	width: 50%;
+	background-color: #282828;
+	color: white;
+}
+
+.btn-in:hover{
+	background-color: #eab245;
+	color: white;
 }
 
 .btn-link{
-	
+	color: #282828;
+	text-decoration: none;
+}
+
+.btn-link:hover{
+	color: #eab245;
 }
 
 

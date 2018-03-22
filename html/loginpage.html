@@ -5,33 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>chips ahoy</title>
 	<!-- Load your Bootstrap CSS Here -->
-	<link href="css/bootstrap/ootstrap.min.css" rel="stylesheet"/>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
     <!-- Load your CSS Style Here! -->
-    <link href="css/style.css" rel="stylesheet">
-	<!-- Bootsrap-4 -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<link href="../css/loginstyle.css" rel="stylesheet">
+	<link href="../css/construct.css" rel="stylesheet">
+	<!-- Script -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="../js/JavaScript.js"></script>
 </head>
 <body>
   <!-- Top Header Area -->
-  <div class="top-header-area">
-	<div class="container">
-		<div class="row">
-			<div class="top-header">
-				<div class="navbar">
-					<a href="#shop">Shop</a>
-					<a href="#pages">Pages</a>
-					<a href="#element">Element</a>
-				</div>
-			</div>
+  <div class="container-fluid no-space">
+	<div class="row row-header no-space">
+		<div class="col-md-12">
+			<nav class="navbar navbar-default middlein">
+				<a class="navbar-brand" href="#">Savoy</a>
+				<ul class="nav navbar-left">
+					<li class="nav-item">
+						<a class="nav-link" href="#">Shop</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Catalog</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Contact</a>
+					</li>
+				</ul>
+				<ul class="nav navbar-right" id="ul2">
+					<li class="nav-item">
+						<a class="nav-link" href="loginpage.html" id="In"></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Cart
+							<sup id="quantityNum"> 0</sup>
+						</a>
+					</li>
+				</ul>
+			</nav>
 		</div>
-		<hr>
 	</div>
-  </div>
+</div>
   <!-- Form Area -->
-  <div class = "container">
+  <div class = "container-fluid form-contain">
 	<form class="login-form" role="form" method="POST" action="/login">
 		<div class="row">
 			<div class="col-md-3"></div>
